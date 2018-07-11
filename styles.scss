@@ -1,0 +1,112 @@
+
+$blue: #3897f0;
+$white: #fff;
+$border-gray: #efefef;
+$border: 1px solid;
+$size: 14px;
+$background: #fafafa;
+
+input {
+    display: block;
+    height: 36px;
+    border: $border $border-gray;
+    background: #fafafa;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+
+* {
+    font-size: $size;
+    color: #999;
+    box-sizing: border-box;
+}
+
+button {
+    background: $blue;
+    color: $white;
+    padding: 5px;
+    border-radius: 3px;
+    border-style: none;
+    width: 100%;
+    height: 36px;
+}
+
+i.fa.fa-facebook-official {
+    color: $white;
+}
+
+main.container {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;  
+&__or{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        .or{
+            
+            width: 100%;
+        }
+        p{
+            padding: 0 5px;
+        }
+
+    }
+}
+.line {
+    position: relative;
+    
+    &:before {
+        border-top: 2px solid $border-gray;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+    
+    span {
+        background: $white;
+        padding: 0 15px;
+        z-index: 1;
+    }
+}
+
+.logo {
+    img {
+    width: 171px;
+    height: 51px;
+    }
+}
+
+.login {
+    background: $white;
+    color: #000;
+    border: $border;
+    border-color: $border-gray;
+    height: 70px;
+    width: 350px;
+
+    span {
+        color: $blue;
+    }
+}
+
+.container-login {
+    margin-top: 40px;
+}
+
+.subcontainer {
+  padding: 30px 40px 40px 40px; 
+  width: 350px;
+  margin: 0 auto;
+  border: $border;
+  margin-bottom: 10px;
+  border-color: $border-gray;
+}
+
